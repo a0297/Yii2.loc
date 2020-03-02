@@ -1,0 +1,11 @@
+kind: pipeline
+name: default
+
+steps:
+- name: build
+  image: alpine
+  environment:
+    USERNAME:
+      from_secret: 3fc0a7609d77ca1456af
+    PASSWORD:
+      from_secret: 68f946e30a555cd7009420aa61997ffa6618d388
